@@ -13,6 +13,7 @@ dnf -y update
 # Install dynamips dependencies
 dnf -y install glibc-static
 dnf -y install xterm
+dnf -y install ubridge
 
 # Create a temporary folder on /tmp
 cd /opt/
@@ -21,10 +22,6 @@ cd /opt/
 git clone https://github.com/GNS3/vpcs.git
 cd vpcs/src
 sh mk.sh
-chmod +rx -R /opt/vpcs
 
-# Warning
-echo "**************************************"
-echo " Install directory: /opt/vpcs/src     "
-echo " Please, define it in your GNS3-GUI   "
-echo "**************************************"
+#Copy vpcs into path folders
+cp vpcs /usr/bin

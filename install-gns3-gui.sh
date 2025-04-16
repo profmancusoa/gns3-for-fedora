@@ -7,7 +7,7 @@ if [ "$(id -u)" != "0" ]; then
 fi
 
 # Install dependencies
-dnf -y install python3-qt5 python3-sip
+dnf -y install python3-qt5 python3-pyqt5 python3-pyqt5-sip 
 
 # Install gns3-gui via pip3
 pip3 install gns3-gui

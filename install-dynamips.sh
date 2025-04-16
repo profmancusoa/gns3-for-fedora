@@ -22,7 +22,7 @@ mkdir -p /tmp/build-dynamips
 cd /tmp/build-dynamips
 
 # Clone repo from github
-git clone git://github.com/GNS3/dynamips.git
+git clone https://github.com/GNS3/dynamips.git
 cd dynamips
 mkdir build
 cd build
