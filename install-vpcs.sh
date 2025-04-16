@@ -14,6 +14,7 @@ dnf -y update
 dnf -y install glibc-static
 dnf -y install xterm
 dnf -y install ubridge
+dnf -y install telnet
 
 # Create a temporary folder on /tmp
 cd /opt/
