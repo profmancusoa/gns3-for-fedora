@@ -14,7 +14,7 @@ dnf -y update
 dnf -y install git bison flex
 
 cd /tmp/iniparser
-rm -rf /tmp/
+rm -rf /tmp/iniparser
 git clone http://github.com/ndevilla/iniparser.git
 cd iniparser
 mkdir build
