@@ -28,10 +28,10 @@ sudo cp src/dictionary.h /usr/local/include
 cd ..
 rm -f /tmp/iniparser
 
-cd /tmp/iouyap
+rm -f /tmp/iouyap
 git clone https://github.com/GNS3/iouyap.git
 cd iouyap
 make
 sudo make install
-
+rm -f /tmp/iouyap
 
