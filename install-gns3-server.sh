@@ -11,7 +11,7 @@ fi
 dnf update
 
 #Install gns3-server dependencies
-dnf -y install python3-devel redhat-rpm-config
+dnf -y install python3-devel redhat-rpm-config busybox openssl-libs.i686
 
 #Install using pip3
 pip3 install gns3-server
