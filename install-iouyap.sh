@@ -13,8 +13,9 @@ dnf -y update
 # Install dynamips dependencies
 dnf -y install git bison flex
 
-cd /tmp/iniparser
 rm -rf /tmp/iniparser
+mkdir -p /tmp/iniparser 
+cd /tmp/iniparser
 git clone http://github.com/ndevilla/iniparser.git
 cd iniparser
 mkdir build
@@ -25,7 +26,7 @@ cd ..
 sudo cp build/libiniparser.* /usr/lib/
 sudo cp src/iniparser.h /usr/local/include
 sudo cp src/dictionary.h /usr/local/include
-cd ..
+cd /tmp
 rm -rf /tmp/iniparser
 
 rm -rf /tmp/iouyap
