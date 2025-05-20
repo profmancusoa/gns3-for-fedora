@@ -26,12 +26,12 @@ sudo cp build/libiniparser.* /usr/lib/
 sudo cp src/iniparser.h /usr/local/include
 sudo cp src/dictionary.h /usr/local/include
 cd ..
-rm -f /tmp/iniparser
+rm -rf /tmp/iniparser
 
-rm -f /tmp/iouyap
+rm -rf /tmp/iouyap
 git clone https://github.com/GNS3/iouyap.git
 cd iouyap
 make
 sudo make install
-rm -f /tmp/iouyap
+rm -rf /tmp/iouyap
 
