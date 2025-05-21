@@ -7,6 +7,8 @@ if [ "$(id -u)" != "0" ]; then
 	exit 1
 fi
 
+CWD=$(pwd)
+
 # Update system
 dnf -y update
 
@@ -32,6 +34,7 @@ rm -rf /tmp/iniparser
 rm -rf /tmp/iouyap
 git clone https://github.com/GNS3/iouyap.git
 cd iouyap
+cp $CWD/iouyap.* ./
 make
 sudo make install
 rm -rf /tmp/iouyap
