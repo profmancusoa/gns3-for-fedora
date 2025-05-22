@@ -5,4 +5,3 @@ sudo ./install-gns3-server.sh
 sudo ./install-gns3-gui.sh
 sudo ./install-gns3-gui-shortcut.sh
 sudo ./install-vpcs.sh
-./link_images.sh
